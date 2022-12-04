@@ -134,8 +134,6 @@ if __name__ == '__main__':
         sys.exit(0)
 
     # init protocol
-    tmp_order_idx = args.order_idx
-    args.order_idx = 1
     protocol = CILProtocol(args, dataset)
 
     dist_folder = 'dists'
@@ -278,7 +276,6 @@ if __name__ == '__main__':
     # convert dist_mat from 'random' to corresponding order
     random_order = protocol.wnid_order
     args.order_type = tmp_order_type
-    args.order_idx = tmp_order_idx
     protocol = CILProtocol(args, dataset)
     current_order_file = protocol.wnid_order
     idx_order = []

@@ -1,6 +1,6 @@
 # Rethinking Class Orders and Transferability in Class Incremental Learning
 
-This is the official repository for the _paper Rethinking Class Orders and Transferability in Class Incremental Learning_. [[Pre-print]](https://www.sciencedirect.com/science/article/abs/pii/S0167865522002252)[[Supp]](https://ars.els-cdn.com/content/image/1-s2.0-S0167865522002252-mmc1.pdf)
+This is the official repository for the _paper Rethinking Class Orders and Transferability in Class Incremental Learning_. [[Main Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0167865522002252)[[Supp]](https://ars.els-cdn.com/content/image/1-s2.0-S0167865522002252-mmc1.pdf)
 
 ## 1. Requirements
 
@@ -44,7 +44,21 @@ And Table 1 in the supplementary material by:
 
 ### 3.2 Transferability of Even and Group
 
+For Group ImageNet, first calculate transferability:
 
+`bash scripts/calc_transferability_imagenet.sh`
+
+then display transferability:
+
+`python utils/display_trans.py`
+
+For Group iNaturalist, first calculate transferability:
+
+`bash scripts/calc_transferability_inat.sh`
+
+then display transferability:
+
+`python utils/display_trans.py --dataset inat64x64`
 
 ### 3.3 Greedy order obtained by COSA
 

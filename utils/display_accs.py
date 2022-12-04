@@ -84,42 +84,42 @@ if __name__ == '__main__':
 
     result_dir_dict = {
         'iCaRL': [
-            '../result/%s_%s_%d/%s/seed_1993/skip_first_%s_fc_%d_adam_%s_no_final_relu_aug_wd_0.0001_%s_%d_%s%s_embedding_cosine%s' % (
+            './result/%s_%s_%d/%s/seed_1993/skip_first_%s_fc_%d_adam_%s_no_final_relu_aug_wd_0.0001_%s_%d_%s%s_embedding_cosine%s' % (
                 dataset, class_order, i + 1, inc_protocol, network, num_epochs, str(base_lr), exemplar_selection,
                 num_exemplars, exemplar_budget,
                 '_lwf_1.0_temp_2.0' if use_lwf else '', suffix) for i in
             range(num_order)
         ],
         'EEIL': [
-            '../result/%s_%s_%d/%s/seed_1993/skip_first_%s_fc_%d_adam_%s_aug_wd_0.0001_%s_%d_%s%s_eeil_30%s' % (
+            './result/%s_%s_%d/%s/seed_1993/skip_first_%s_fc_%d_adam_%s_aug_wd_0.0001_%s_%d_%s%s_eeil_30%s' % (
                 dataset, class_order, i + 1, inc_protocol, network, num_epochs, str(base_lr), exemplar_selection,
                 num_exemplars, exemplar_budget,
                 '_lwf_1.0_temp_2.0' if use_lwf else '', suffix) for i in
             range(num_order)
         ],
         'LSIL': [
-            '../result/%s_%s_%d/%s/seed_1993/skip_first_%s_fc_%d_adam_%s_aug_wd_0.0001_%s_%d_%s%s_bic_epochs_2_w_0.1_ratio_0.1_aug%s' % (
+            './result/%s_%s_%d/%s/seed_1993/skip_first_%s_fc_%d_adam_%s_aug_wd_0.0001_%s_%d_%s%s_bic_epochs_2_w_0.1_ratio_0.1_aug%s' % (
                 dataset, class_order, i + 1, inc_protocol, network, num_epochs, str(base_lr), exemplar_selection,
                 num_exemplars, exemplar_budget,
                 '_lwf_1.0_temp_2.0_adj_w' if use_lwf else '', suffix) for i in
             range(num_order)
         ],
         'IL2M': [
-            '../result/%s_%s_%d/%s/seed_1993/skip_first_%s_fc_%d_adam_%s_aug_wd_0.0001_%s_%d_%s_il2m%s' % (
+            './result/%s_%s_%d/%s/seed_1993/skip_first_%s_fc_%d_adam_%s_aug_wd_0.0001_%s_%d_%s_il2m%s' % (
                 dataset, class_order, i + 1, inc_protocol, network, num_epochs, str(base_lr), exemplar_selection,
                 num_exemplars, exemplar_budget, suffix) for
             i in
             range(num_order)
         ],
         'WA': [
-            '../result/%s_%s_%d/%s/seed_1993/skip_first_%s_fc_%d_adam_%s_aug_wd_0.0001_%s_%d_%s%s_weight_aligning%s' % (
+            './result/%s_%s_%d/%s/seed_1993/skip_first_%s_fc_%d_adam_%s_aug_wd_0.0001_%s_%d_%s%s_weight_aligning%s' % (
                 dataset, class_order, i + 1, inc_protocol, network, num_epochs, str(base_lr), exemplar_selection,
                 num_exemplars, exemplar_budget,
                 '_lwf_1.0_temp_2.0_adj_w' if use_lwf else '', suffix) for i in
             range(num_order)
         ],
         'Post-scaling': [
-            '../result/%s_%s_%d/%s/seed_1993/skip_first_%s_fc_%d_adam_%s_aug_wd_0.0001_%s_%d_%s%s_post_scaling%s' % (
+            './result/%s_%s_%d/%s/seed_1993/skip_first_%s_fc_%d_adam_%s_aug_wd_0.0001_%s_%d_%s%s_post_scaling%s' % (
                 dataset, class_order, i + 1, inc_protocol, network, num_epochs, str(base_lr), exemplar_selection,
                 num_exemplars, exemplar_budget,
                 '_lwf_1.0_temp_2.0' if use_lwf else '', suffix) for i in
