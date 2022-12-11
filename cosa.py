@@ -352,5 +352,13 @@ if __name__ == '__main__':
         for wnid in optimal_wnid_order:
             fout.write(wnid + os.linesep)
 
-    print('Total trans: %f' % final_optimal_trans)
+    setting_to_name_mapping = {
+        'ssl_wdist': 'WD (SS)',
+        'supervised_wdist': 'WD (Sup.)',
+        'ssl_mdled': 'MD-LED (SS)',
+        'supervised_mdled': 'MD-LED (Sup.)',
+        'semantic_wordnet_wup': 'Wu-Palmer'
+    }
+
+    print('%s - Total trans: %f' % (setting_to_name_mapping[setting_str], final_optimal_trans))
     print('Run time: %.2f' % (time.time() - program_start_wall_time))

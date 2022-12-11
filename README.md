@@ -62,7 +62,19 @@ then display transferability:
 
 ### 3.3 Greedy order obtained by COSA
 
+For Group ImageNet, run COSA by:
 
+`bash scripts/imagenet64x64_cosa.sh`
+
+From the console output, the estimated transferability of the _greedy_ class order is shown in something like
+
+`MD-LED (Sup.) - Total trans: 32701.340912`
+
+which corresponds to Table 2 in the main paper.
+
+For Group iNaturalist, run COSA by:
+
+`bash scripts/inat_cosa.sh`
 
 ## Citation
 
